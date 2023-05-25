@@ -6,17 +6,19 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
 		<link href="./_app/immutable/assets/0.969a3f8b.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.f1cef5d8.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.e1be4839.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.bca40012.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.2c5b399b.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.137af8c5.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.62146757.js">
+		<link href="./_app/immutable/assets/2.9aa2b55f.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.ec0bd786.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.4f1fc032.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.2a010674.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.3d1b023a.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.d1452ed8.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.c4f08640.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 
 
+<head><title>Beyond Heroes</title></head>
 <div class="bg"><img class="bg-img" alt="newspaper background" src="bg.png">
 	<div class="content"><nav><div class="nav-col"><h1><a href="https://discord.gg/gnnfKKuumg">Join Us</a></h1>
 				<p>Join our war efforts on Discord or by <a href="mailto:BeyondHeroesTheGame@gmail.com">emailing us!</a></p></div>
@@ -25,24 +27,38 @@
 					of doing it!</p></div>
 			<div class="nav-col"><h1><a href="/">Who are we?</a></h1> 
 				<p>Gather some intel about our soldiers and learn a little bit about us!</p></div></nav>
-		<div class="stuff"><button class="stuff-item"><h1>Welcome to Beyond Heroes!</h1>
+		<div class="stuff"><button class="stuff-item" type="button"><h1>Welcome to Beyond Heroes!</h1>
 					
-				</button><button class="stuff-item"><h1>What is Beyond Heroes?</h1>
+				</button><button class="stuff-item" type="button"><h1>What is Beyond Heroes?</h1>
 					
-				</button><button class="stuff-item"><h1>What can you expect?</h1>
+				</button><button class="stuff-item" type="button"><h1>What can you expect?</h1>
 					
-				</button><button class="stuff-item"><h1>How can you get involved?</h1>
+				</button><button class="stuff-item" type="button"><h1>How can you get involved?</h1>
 					
-				</button><button class="stuff-item"><h1>Spread the Word!</h1>
+				</button><button class="stuff-item" type="button"><h1>Spread the Word!</h1>
 					
 				</button>
-				<button class="stuff-item disabled"><h1>Thank you for your support. Beyond Heroes awaits!</h1></button></div></div>
-	<style>@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
-		p, h1 {
-			color: #2A1E0E;
-			font-family: "Playfair", serif;
+				<button class="stuff-item disabled" type="button"><h1>Thank you for your support. Beyond Heroes awaits!</h1></button></div></div>
+	<style>h1 {
+			color: #2B1F0F;
+			margin: 4px;
+			font-weight: 700;
+			font-family: "Playfair Display", serif;
+		}
+		p {
+			margin: 2px;
+			color: #2B1F0F;
+			font-family: "Crimson Pro", serif;
 		}
 		
+		nav>div>h1 {
+			font-size: 1.8vw;
+		}
+
+		nav>div>p {
+			font-size: 1.5vw;
+		}
+
 		a:visited, a:link, a {
 			font-weight: bold;
 			color: #843219;
@@ -58,8 +74,9 @@
 			width: 30%;
 			display: flex;
 			flex-direction: column;
-			border: dashed black 0.1vh;
+			border: dashed black 0.1vw;
 			justify-content: center;
+			align-items: center;
 		}
 		button {
 			background-color: rgba(0,0,0,0);
@@ -73,7 +90,7 @@
 		.stuff-item > h1 {
 			margin-top: auto;
  			margin-bottom: auto;
-			font-size: 1vw;
+			font-size: 1.1vw;
 		}
 
 		nav, .stuff {
@@ -87,7 +104,7 @@
 			width: 46%;
 			height: 44%;
 			transform: rotate(-3deg);
-			font-size: 1vw;
+			font-size: 1.1vw;
 			text-align: justify;
 			display: flex;
 			flex-direction: column;
@@ -106,7 +123,8 @@
 		}
 
 		.content nav p {
-			font-size: 0.7vw;
+			font-size: 0.9vw;
+			font-weight: 500;
 		}
 
 		.bg {
@@ -151,7 +169,7 @@
 		button.close:hover::before{
 			content: "\2718";
 			position: relative;
-			font-size: 2.5vw;
+			text-decoration: underline;
 		}
 
 		.flex {
@@ -161,6 +179,7 @@
 
 		.col-flex {
 			display: flex;
+			justify-content: top;
 			flex-direction: column;
 		}
 
@@ -170,7 +189,7 @@
 			
 			<script>
 				{
-					__sveltekit_1he9ipf = {
+					__sveltekit_17cgi48 = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -180,8 +199,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.f1cef5d8.js"),
-						import("./_app/immutable/entry/app.2c5b399b.js")
+						import("./_app/immutable/entry/start.ec0bd786.js"),
+						import("./_app/immutable/entry/app.3d1b023a.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
